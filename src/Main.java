@@ -8,6 +8,7 @@ public class Main {
             threads[i].start();
         }
 
+        // Основной поток ждёт завершения всех дочерних потоков
         for(Thread thread: threads){
             try {
                 thread.join();
